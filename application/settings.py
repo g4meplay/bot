@@ -21,5 +21,6 @@ INTENTS = Intents.all()
 
 # Extensões
 EXTENSIONS = [
-    "common.events"
+    "common.events",
+    "common.commands"
 ]
