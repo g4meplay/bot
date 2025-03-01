@@ -4,7 +4,6 @@ from nextcord.ext import commands
 
 class Commands(commands.Cog):
     def __init__(self, bot: commands.Bot):
-        super().__init__()
         self.bot = bot
 
     @nextcord.slash_command(name="ping", description="Mostra o ping do bot")

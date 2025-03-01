@@ -4,7 +4,6 @@ from nextcord.ext import commands
 
 class Events(commands.Cog):
     def __init__(self, bot: commands.Bot):
-        super().__init__()
         self.bot = bot
 
     @commands.Cog.listener()

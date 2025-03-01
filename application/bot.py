@@ -4,9 +4,5 @@ from application.settings import INTENTS as intents
 
 from nextcord.ext.commands import Bot
 
-bot = Bot(
-    command_prefix=command_prefix, 
-    intents=intents
-)
-
+bot = Bot(command_prefix=command_prefix, intents=intents)
 bot.load_extensions(extensions)
