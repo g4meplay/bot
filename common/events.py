@@ -1,4 +1,4 @@
-import sys
+from sys import stdout
 from nextcord.ext import commands
 
 
@@ -9,8 +9,8 @@ class Events(commands.Cog):
 
     @commands.Cog.listener()
     async def on_ready(self):
-        sys.stdout.write(f"{self.bot.user.name}\n")
-        sys.stdout.flush()
+        username = self.bot.user.name
+        stdout.write(f"{self.bot.user.name}\n"); stdout.flush()
 
 
 def setup(bot: commands.Bot):

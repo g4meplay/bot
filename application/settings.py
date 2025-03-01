@@ -1,5 +1,3 @@
-import logging
-import logging.config
 from os import getenv as env
 from dotenv import load_dotenv as load
 from pathlib import Path
@@ -21,6 +19,7 @@ COMMAND_PREFIX = env("COMMAND_PREFIX")
 # Permissões
 INTENTS = Intents.all()
 
+# Extensões
 EXTENSIONS = [
     "common.events"
 ]
