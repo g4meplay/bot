@@ -12,5 +12,6 @@ class Events(commands.Cog):
         sys.stdout.write(f"{self.bot.user.name}\n")
         sys.stdout.flush()
 
+
 def setup(bot: commands.Bot):
     bot.add_cog(Events(bot))
